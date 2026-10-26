@@ -1,0 +1,49 @@
+import os
+import sys
+import unittest
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+
+from aee_hill import (aee, inverso_modular, cifrar_hill, descifrar_hill,
+                      preimagenes_hill)
+
+
+class TestAEE(unittest.TestCase):
+    def test_bezout(self):
+        mcd, x, y, _ = aee(240, 46)
+        self.assertEqual(mcd, 2)
+        self.assertEqual(240 * x + 46 * y, 2)
+
+    def test_inversos_del_ejercicio(self):
+        esperados = {(3, 7): 5, (7, 32): 23, (23, 120): 47, (13, 64): 5, (5, 44): 9}
+        for (a, m), inv in esperados.items():
+            self.assertEqual(inverso_modular(a, m), inv)
+            self.assertEqual((a * inv) % m, 1)
+
+    def test_sin_inverso(self):
+        with self.assertRaises(ValueError):
+            inverso_modular(4, 26)
+
+
+class TestHill(unittest.TestCase):
+    def test_cifrado_ejercicio(self):
+        self.assertEqual(cifrar_hill("PEAR", "EAFB"), "IBAR")
+
+    def test_ida_y_vuelta(self):
+        clave = "HILL"  # det = 15, invertible módulo 26
+        c = cifrar_hill("ESTOESUNAPRUEBA", clave)
+        self.assertEqual(descifrar_hill(c, clave), "ESTOESUNAPRUEBAX")
+
+    def test_clave_singular(self):
+        with self.assertRaises(ValueError):
+            descifrar_hill("ZLXD", "KCDB")
+
+    def test_ejercicio_sin_preimagen(self):
+        # Ambos bloques de ZLXD no tienen preimagen: la primera fila de KCDB
+        # produce siempre valores pares y Z (25) y X (23) son impares.
+        self.assertEqual(preimagenes_hill("ZL", "KCDB"), [])
+        self.assertEqual(preimagenes_hill("XD", "KCDB"), [])
+
+
+if __name__ == "__main__":
+    unittest.main()
