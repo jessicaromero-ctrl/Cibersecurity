@@ -62,4 +62,4 @@ Las letras se convierten a A = 0 … Z = 25. La clave de 4 letras se lee por fil
 
 ## Autoría
 
-Pendiente de definir. Sin licencia asignada.
+Jessica Melani Romero Lora
