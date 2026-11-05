@@ -35,8 +35,6 @@ Analizar una implementación de AES-128 en modo ECB, identificar sus vulnerabili
 | **Relleno (padding)** | Bytes que completan el último bloque. Este programa usa PKCS#7. |
 | **Base64** | Codificación que representa bytes como texto imprimible. No es cifrado. |
 | **Hardcoding** | Escribir credenciales o claves directamente en el código fuente. |
-| **Confidencialidad** | Propiedad que impide la lectura por personas no autorizadas. |
-| **Integridad** | Propiedad que garantiza que los datos no fueron modificados sin autorización. |
 
 ## 4. Descripción técnica del sistema original
 
@@ -205,6 +203,12 @@ aes-cifrado-auditoria/
 └── aes_gcm_mejorado.py   (pendiente)
 ```
 
-## 14. Consideraciones éticas
+## 14. Aviso de autoría, privacidad y uso ético
 
-El análisis se realiza sobre código propio de la práctica, con fines de aprendizaje. Ninguna técnica descrita debe aplicarse sobre sistemas, cuentas o datos de terceros sin autorización expresa y por escrito.
+**Autoría y derechos.** Los desarrollos, cálculos, respuestas, análisis y documentación de esta práctica son de autoría de la alumna. Los enunciados, presentaciones y archivos PDF de la asignatura son materiales del profesor y de la Universidad Politécnica Metropolitana del Estado de Hidalgo, y se incluyen únicamente con fines académicos. Queda prohibida la reproducción o distribución de los contenidos de autoría propia sin autorización expresa de la autora.
+
+**Carácter del repositorio.** El repositorio es público porque aloja actividades académicas de posgrado de la asignatura Ciberseguridad, de la Maestría en Inteligencia Artificial. Sirve como registro de seguimiento que el profesor revisa de manera periódica. No constituye un espacio de distribución de herramientas de ataque.
+
+**Finalidad y utilidad.** El contenido tiene fines formativos y de divulgación científica. Documenta el análisis de vulnerabilidades en implementaciones criptográficas, compara modos de operación (ECB y GCM) y fundamenta decisiones de diseño seguro. Su utilidad está en mostrar por qué un algoritmo reconocido, como AES, requiere además una gestión adecuada de claves y verificación de integridad.
+
+**Datos y uso ético.** Los datos empleados son ficticios y no contienen información personal, confidencial ni de terceros. Las técnicas descritas deben aplicarse únicamente en entornos aislados y autorizados. Ninguna de ellas debe emplearse sobre sistemas, cuentas o datos de terceros sin autorización expresa y por escrito.
