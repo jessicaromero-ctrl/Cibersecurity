@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Auditoría y mejora de cifrado AES
+
+**Maestría en Inteligencia Artificial · UPMH · Ciberseguridad · Periodo 2026**
+**Alumna:** Jessica Melani Romero Lora
+
+## Estado
+En progreso. Parte 1 (AES-ECB original) ejecutada en local.
+
+## Archivos
+- `aes_ecb_original.py`: implementación original con AES-128 en modo ECB.
