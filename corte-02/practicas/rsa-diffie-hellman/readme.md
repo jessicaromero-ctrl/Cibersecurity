@@ -187,4 +187,5 @@ rsa-diffie-hellman/
 └── readme.md
 ```
 
-## 12. Consideraciones éticasLos cálculos se realizan con números pequeños con fines didácticos. Los valores reales de RSA usan primos de cientos de dígitos. Ninguna técnica descrita debe aplicarse sobre sistemas, cuentas o datos de terceros sin autorización expresa y por escrito.
+## 12. Consideraciones éticas
+Los cálculos se realizan con números pequeños con fines didácticos. Los valores reales de RSA usan primos de cientos de dígitos. Ninguna técnica descrita debe aplicarse sobre sistemas, cuentas o datos de terceros sin autorización expresa y por escrito. Se reservan los derechos de producción, distribución del contenido. La aplicación de este conocimiento forma parte de prácticas observadas, reguladas y delimitadas a nivel código.
