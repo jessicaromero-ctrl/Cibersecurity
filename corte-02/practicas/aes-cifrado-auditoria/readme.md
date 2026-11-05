@@ -3,7 +3,7 @@
 **Maestría en Inteligencia Artificial · Universidad Politécnica Metropolitana del Estado de Hidalgo (UPMH)**
 **Asignatura:** Ciberseguridad · **Periodo:** 2026
 **Alumna:** Jessica Melani Romero Lora · **Profesor:** Dr. Antonio Cedillo Hernández
-
+**Notebook en Google Colab:** https://colab.research.google.com/gist/jessicaromero-ctrl/132016e0140a7f78c7c38cfe23998f40/pycryptodome.ipynb
 > **Aviso de uso académico.** Esta práctica tiene fines exclusivamente académicos y educativos. Las técnicas descritas deben aplicarse únicamente en entornos aislados y autorizados.
 
 ---
